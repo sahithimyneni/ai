@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mock Interview Platform</title>
+
+    <link rel="stylesheet" href="style7.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<section id="landing">
+
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-robot"></i>
+            AI Interview
+        </div>
+
+        <button onclick="openDashboard()">
+            Get Started
+        </button>
+    </nav>
+
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Crack Your Next Interview
+                With AI
+            </h1>
+
+            <p>
+                Practice technical, behavioral and
+                scenario-based interviews with an
+                intelligent AI interviewer.
+            </p>
+
+            <button class="hero-btn"
+            onclick="openDashboard()">
+                Start Mock Interview
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="hero-card">
+                🤖 AI Interviewer
+                <p>Adaptive Questions</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="dashboard" class="hidden">
+
+    <aside>
+
+        <h2>AI Interview</h2>
+
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-file"></i>
+                Reports
+            </li>
+
+            <li>
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main>
+
+        <h1>Dashboard</h1>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>12</h3>
+                <p>Interviews Taken</p>
+            </div>
+
+            <div class="card">
+                <h3>85%</h3>
+                <p>Average Score</p>
+            </div>
+
+            <div class="card">
+                <h3>92%</h3>
+                <p>Best Score</p>
+            </div>
+
+            <div class="card">
+                <h3>Strong</h3>
+                <p>Readiness</p>
+            </div>
+
+        </div>
+
+        <div class="upload-box">
+
+            <h2>Upload Resume</h2>
+
+            <input type="file" id="resume">
+
+            <textarea
+            id="jd"
+            placeholder="Paste Job Description Here">
+            </textarea>
+
+            <button onclick="startInterview()">
+                Start Interview
+            </button>
+
+        </div>
+
+    </main>
+
+</section>
+
+<section id="interview" class="hidden">
+
+    <div class="interview-container">
+
+        <div class="top-bar">
+
+            <span id="questionNumber">
+                Question 1 / 5
+            </span>
+
+            <span id="timer">
+                60
+            </span>
+
+        </div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <div class="ai-chat">
+
+            <div class="ai-avatar">
+                🤖
+            </div>
+
+            <div class="question-box"
+            id="question">
+            </div>
+
+        </div>
+
+        <textarea
+        id="answer"
+        placeholder="Type your answer">
+        </textarea>
+
+        <button onclick="submitAnswer()">
+            Submit Answer
+        </button>
+
+    </div>
+
+</section>
+
+<section id="report" class="hidden">
+
+    <div class="report-container">
+
+        <h1>Interview Report</h1>
+
+        <div class="report-cards">
+
+            <div class="report-card">
+                <h2 id="finalScore">85</h2>
+                <p>Readiness Score</p>
+            </div>
+
+            <div class="report-card">
+                <h2>88%</h2>
+                <p>Technical Skills</p>
+            </div>
+
+            <div class="report-card">
+                <h2>82%</h2>
+                <p>Communication</p>
+            </div>
+
+            <div class="report-card">
+                <h2>90%</h2>
+                <p>Time Management</p>
+            </div>
+
+        </div>
+
+        <h3>Strengths</h3>
+
+        <ul>
+            <li>JavaScript</li>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+        </ul>
+
+        <h3>Needs Improvement</h3>
+
+        <ul>
+            <li>System Design</li>
+            <li>Optimization Concepts</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<script src="script7.js"></script>
+
+</body>
+</html>
